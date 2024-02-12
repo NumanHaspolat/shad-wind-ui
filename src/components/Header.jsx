@@ -2,13 +2,14 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const Main = () => {
+const Header = () => {
   const navTo = useNavigate();
   return (
     <main className="main">
       <header>From Vision to Reality</header>
       <p className="par">
-        Craft with Excellence: Shadcn's Best Meets Full Tailwind class Integration
+        Craft with Excellence: Shadcn's Best Meets Full Tailwind class
+        Integration. Accessible . Easy To Use & Open Source..
       </p>
       <div className="flex gap-5">
         <button
@@ -36,4 +37,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Header;

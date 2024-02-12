@@ -536,4 +536,6 @@ header {
 .par {
   color: #a1a1aa;
   font-size: 15px;
+  width: 560px;
+  text-align: center;
 }
