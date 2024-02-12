@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: black;
+  background-color: #09090B;
 }
 
 button {
@@ -26,7 +26,7 @@ button {
 
 .button-outlined {
   border: 1px solid #27272a;
-  background-color: black;
+  background-color: #09090B;
   /* box-shadow: rgba(100, 100, 100, 0.25) 0px 7px 9px -5px,
     rgba(85, 85, 85, 0.3) 0px 8px 11px -8px; */
   font-size: 0.9rem;
@@ -36,16 +36,16 @@ button {
 .button-borderless {
   border: none;
   color: #828283;
-  background-color: black;
+  background-color: #09090B;
   font-size: 0.9rem;
   border-radius: 0.4rem;
 }
 
 .input-filled {
   background-color: #fafafa;
-  color: black;
+  color: #09090B;
   &::placeholder {
-    color: black;
+    color: #09090B;
   }
   border: 1px solid gray;
   outline: 1px solid #27272a;
@@ -54,14 +54,12 @@ button {
 .input-outlined {
   border: none;
   color: #858586;
-  box-shadow: rgba(230, 230, 230, 0.25) 0px 1px 4px -7px,
-    rgba(224, 224, 224, 0.3) 0px 8px 11px -8px;
   outline: 1px solid #27272a;
-  background-color: black;
+  background-color: #09090B;
 }
 
 .input-label-aniation {
-  background-color: black;
+  background-color: #09090B;
   color: #858586;
   border: none;
   outline: none;
@@ -250,7 +248,7 @@ button {
   padding: 0.4rem;
   pointer-events: none;
   transition: all 0.2s ease;
-  background-color: black;
+  background-color: #09090B;
   color: #858586;
 }
 
@@ -276,7 +274,7 @@ button {
   height: 17px;
   width: 17px;
   cursor: pointer;
-  background-color: black !important;
+  background-color: #09090B !important;
   border: 1px solid #828283;
   accent-color: #828283;
   border-radius: 0.2rem !important;
@@ -363,7 +361,7 @@ button {
   padding: 8px;
   margin-top: 8px;
   color: aliceblue;
-  background-color: black;
+  background-color: #09090B;
   border: 1px solid aliceblue;
   border-radius: 4px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
@@ -395,7 +393,7 @@ button {
 
 .trigger-btn {
   border: none;
-  background-color: black;
+  background-color: #09090B;
   border: 1px solid #27272a;
   color: white;
   padding: 10px 20px;
@@ -437,6 +435,10 @@ button {
   margin-left: 1.5rem !important;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .joined {
   display: flex;
   align-items: center;
@@ -451,7 +453,7 @@ button {
 
 .menubar {
   border: 1px solid #27272a;
-  background-color: black;
+  background-color: #09090B;
   color: aliceblue;
   display: flex;
   align-items: center;
@@ -464,5 +466,31 @@ button {
 .logo {
   padding: 0.1rem;
   border-right: 1px solid #27272a;
+  cursor: pointer;
   padding-right: 0.9rem;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.right-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.let-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menubar-own {
+  max-width: 1300px;
+  margin: auto;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
 }

@@ -1,10 +1,8 @@
 import "./App.css";
+import AppRouter from "./AppRouter";
 
 const App = () => {
-  return (
-    <div className="flex jus-center items-center h-100">
-    </div>
-  );
+  return <AppRouter />;
 };
 
 export default App;
