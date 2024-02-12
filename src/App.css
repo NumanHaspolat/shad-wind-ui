@@ -562,12 +562,6 @@ li {
   justify-content: center;
 }
 
-@media screen and (max-width: 1300px) {
-  .main-cnt {
-    width: auto !important;
-  }
-}
-
 .par-2 {
   color: #747477;
   font-size: 13px;
@@ -598,4 +592,19 @@ li {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.auth {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .main-cnt {
+    width: auto !important;
+  }
+  .auth {
+    flex-direction: column;
+  }
 }
