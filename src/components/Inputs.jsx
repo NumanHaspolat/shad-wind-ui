@@ -17,7 +17,7 @@ const Inputs = () => {
         <input
           type="text"
           id="email"
-          className="form-control input-label-aniation p-input b-radius-3 fs-1"
+          className="form-control input-label-animation p-input b-radius-3 fs-1"
           placeholder=" "
         />
         <label htmlFor="email" className="form-label fs-1">

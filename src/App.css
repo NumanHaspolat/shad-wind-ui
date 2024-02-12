@@ -58,7 +58,7 @@ button {
   background-color: #09090b;
 }
 
-.input-label-aniation {
+.input-label-animation {
   background-color: #09090b;
   color: #858586;
   border: none;
@@ -538,4 +538,64 @@ header {
   font-size: 15px;
   width: 560px;
   text-align: center;
+}
+
+.main-cnt {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 1200px;
+}
+
+.main-ul {
+  display: flex;
+  gap: 0.7rem;
+}
+
+li {
+  list-style: none;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1300px) {
+  .main-cnt {
+    width: auto !important;
+  }
+}
+
+.par-2 {
+  color: #747477;
+  font-size: 13px;
+}
+
+.auth-cnt {
+  position: relative;
+  padding: 0rem 5rem;
+  display: flex;
+  width: 500px;
+  margin: auto;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.or-with {
+  color: #747477;
+  font-size: 13px;
+  top: 185px;
+  background-color: #09090b;
+  padding: 0.4rem;
+  left: 200px;
+}
+
+.right-top {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
