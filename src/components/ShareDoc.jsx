@@ -1,5 +1,5 @@
 import React from "react";
-import { FaArrowDown } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
 
 const ShareDoc = () => {
   return (
@@ -37,7 +37,7 @@ const ShareDoc = () => {
             </div>
           </div>
           <div className="combobox-container">
-            <FaArrowDown color="white" className="arrowIcon" />
+            <IoIosArrowDown color="white" className="arrowIcon" />
             <select id="framework-select" className="combobox">
               <option value="edit">Can edit</option>
               <option value="view">Can view</option>
@@ -57,7 +57,7 @@ const ShareDoc = () => {
             </div>
           </div>
           <div className="combobox-container">
-            <FaArrowDown color="white" className="arrowIcon" />
+            <IoIosArrowDown color="white" className="arrowIcon" />
             <select id="framework-select" className="combobox">
               {" "}
               <option value="view">Can view</option>
@@ -78,7 +78,7 @@ const ShareDoc = () => {
             </div>
           </div>
           <div className="combobox-container">
-            <FaArrowDown color="white" className="arrowIcon" />
+            <IoIosArrowDown color="white" className="arrowIcon" />
             <select id="framework-select" className="combobox">
               <option value="edit">Can edit</option>
               <option value="view">Can view</option>
@@ -98,7 +98,7 @@ const ShareDoc = () => {
             </div>
           </div>
           <div className="combobox-container">
-            <FaArrowDown color="white" className="arrowIcon" />
+            <IoIosArrowDown color="white" className="arrowIcon" />
             <select id="framework-select" className="combobox">
               <option value="view">Can view</option>
               <option value="edit">Can edit</option>

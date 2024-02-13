@@ -1,7 +1,14 @@
-import { FaArrowDown } from "react-icons/fa";
-import React from "react";
+import { IoIosArrowDown } from "react-icons/io";
+import React, { useState } from "react";
+import Combobox from "./Combobox";
 
 const TeamMem = () => {
+  const [roles, setRoles] = useState([
+    "Owner",
+    "Developer",
+    "Designer",
+    "Billing",
+  ]);
   return (
     <div className="team">
       <h4>Team Members</h4>
@@ -20,15 +27,16 @@ const TeamMem = () => {
               <p className="par-2">k@example.com</p>
             </div>
           </div>
-          <div className="combobox-container">
-            <FaArrowDown color="white" className="arrowIcon" />
+          <Combobox roles={roles} defaultValue={"Owner"} />
+          {/* <div className="combobox-container">
+            <IoIosArrowDown color="white" className="arrowIcon" />
             <select id="framework-select" className="combobox">
               <option value="edit">Owner</option>
               <option value="dev">Developer</option>
               <option value="view">Designer</option>
               <option value="bill">Billing</option>
             </select>
-          </div>
+          </div> */}
         </div>
         <div className="user flex space-between items-center">
           <div className="left-user flex gap-5">
@@ -42,15 +50,7 @@ const TeamMem = () => {
               <p className="par-2">f@example.com</p>
             </div>
           </div>
-          <div className="combobox-container">
-            <FaArrowDown color="white" className="arrowIcon" />
-            <select id="framework-select" className="combobox">
-              <option value="dev">Developer</option>
-              <option value="edit">Owner</option>
-              <option value="view">Designer</option>
-              <option value="bill">Billing</option>
-            </select>
-          </div>
+          <Combobox roles={roles} defaultValue={"Developer"} />
         </div>
         <div className="user flex space-between items-center">
           <div className="left-user flex gap-5">
@@ -64,15 +64,7 @@ const TeamMem = () => {
               <p className="par-2">n@example.com</p>
             </div>
           </div>
-          <div className="combobox-container">
-            <FaArrowDown color="white" className="arrowIcon" />
-            <select id="framework-select" className="combobox">
-              <option value="dev">Developer</option>
-              <option value="edit">Owner</option>
-              <option value="view">Designer</option>
-              <option value="bill">Billing</option>
-            </select>
-          </div>
+          <Combobox roles={roles} />
         </div>
         <div className="user flex space-between items-center">
           <div className="left-user flex gap-5">
@@ -86,15 +78,7 @@ const TeamMem = () => {
               <p className="par-2">l@example.com</p>
             </div>
           </div>
-          <div className="combobox-container">
-            <FaArrowDown color="white" className="arrowIcon" />
-            <select id="framework-select" className="combobox">
-              <option value="bill">Billing</option>
-              <option value="dev">Developer</option>
-              <option value="edit">Owner</option>
-              <option value="view">Designer</option>
-            </select>
-          </div>
+          <Combobox roles={roles} />
         </div>
         <div className="user flex space-between items-center">
           <div className="left-user flex gap-5">
@@ -108,15 +92,7 @@ const TeamMem = () => {
               <p className="par-2">z@example.com</p>
             </div>
           </div>
-          <div className="combobox-container">
-            <FaArrowDown color="white" className="arrowIcon" />
-            <select id="framework-select" className="combobox">
-              <option value="view">Designer</option>
-              <option value="bill">Billing</option>
-              <option value="dev">Developer</option>
-              <option value="edit">Owner</option>
-            </select>
-          </div>
+          <Combobox roles={roles} />
         </div>
       </div>
     </div>

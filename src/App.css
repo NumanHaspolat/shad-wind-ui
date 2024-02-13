@@ -15,6 +15,11 @@ button {
   cursor: pointer;
 }
 
+::selection {
+  color: black;
+  background: white;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -468,6 +473,12 @@ button {
   font-size: 16px;
 }
 
+.warn {
+  outline: 1px solid #27272a;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+}
+
 .menubar-item {
   font-weight: 600;
   font-size: 13px;
@@ -872,9 +883,78 @@ li {
   border-radius: 0.3rem;
 }
 
+#docs {
+  width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.catalogs {
+  display: flex;
+  gap: 1.4rem;
+  position: sticky;
+  padding: 0.6rem;
+
+  flex-direction: column;
+  p {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  a {
+    color: #96969e;
+    font-size: 14px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.combobox-container {
+  position: relative;
+}
+
+.arrowIcon {
+  cursor: pointer;
+}
+
+.combobox {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.dropdown {
+  margin-top: 0.3rem;
+  position: absolute;
+  background-color: #09090b;
+  width: 100%;
+  border-radius: 0.3rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  z-index: 1;
+}
+
+.dropdown-item {
+  padding: 5px 17px;
+  transition: 0.1s;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  border-radius: 0.4rem;
+  background-color: #09090b;
+}
+
+.dropdown-item:hover {
+  background-color: #27272a;
+}
+
 @media screen and (max-width: 1300px) {
   .main-cnt {
     width: auto !important;
+  }
+  #docs {
+    width: auto;
   }
   #Cards {
     grid-template-columns: repeat(2, 1fr) !important;

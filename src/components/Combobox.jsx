@@ -1,19 +1,44 @@
-import React from "react";
-import { FaArrowDownShortWide } from "react-icons/fa6";
+import React, { useEffect, useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 import "../App.css";
 
-const Combobox = () => {
+const Combobox = ({ roles, defaultValue }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selected, setSelected] = useState(null);
+
+  const toggleDropdown = () => setIsOpen(!isOpen);
+
+  const handleSelect = (role) => {
+    setSelected(role);
+    setIsOpen(false);
+  };
+
+  useEffect(() => {
+     setSelected(defaultValue) 
+  }, [])
+
   return (
     <div className="combobox-container">
-      <FaArrowDownShortWide color="white" className="arrowIcon" />
-      <select id="framework-select" className="combobox">
-        <option value="">Select framework</option>
-        <option value="next.js">Next.js</option>
-        <option value="sveltekit">SvelteKit</option>
-        <option value="nuxt.js">Nuxt.js</option>
-        <option value="remix">Remix</option>
-        <option value="JavaScript">JavaScript</option>
-      </select>
+      <button
+        className="combobox flex items-center space-between"
+        onClick={toggleDropdown}
+      >
+        {selected || "Select Role"}
+        <IoIosArrowDown color="white" />
+      </button>
+      {isOpen && (
+        <div className="dropdown">
+          {roles.map((role, index) => (
+            <div
+              key={index}
+              className="dropdown-item"
+              onClick={() => handleSelect(role)}
+            >
+              {role}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

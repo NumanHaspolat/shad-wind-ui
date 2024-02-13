@@ -1,11 +1,16 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { CiWarning } from "react-icons/ci";
 
 const Header = () => {
   const navTo = useNavigate();
   return (
     <main className="main">
+      <span className="color-light flex gap-3 warn fs-1 items-center">
+        <CiWarning color="white" fontSize={20} />
+        Not fully responsive - Demo version
+      </span>
       <header>From Vision to Reality</header>
       <p className="par">
         Craft with Excellence: Shadcn's Best Meets{" "}

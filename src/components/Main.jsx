@@ -4,7 +4,7 @@ import Cards from "./Cards";
 import Forms from "./Forms";
 
 const Main = () => {
-  const [selectedContent, setSelectedContent] = useState("Auth");
+  const [selectedContent, setSelectedContent] = useState("Cards");
 
   const renderContent = () => {
     switch (selectedContent) {
@@ -32,17 +32,17 @@ const Main = () => {
         <ul className="main-ul">
           <button
             className="button-borderless transition-2 fs-1 p-button main-ul-items"
-            style={getButtonStyle("Auth")}
-            onClick={() => setSelectedContent("Auth")}
-          >
-            Auth
-          </button>
-          <button
-            className="button-borderless transition-2 fs-1 p-button main-ul-items"
             style={getButtonStyle("Cards")}
             onClick={() => setSelectedContent("Cards")}
           >
             Cards
+          </button>
+          <button
+            className="button-borderless transition-2 fs-1 p-button main-ul-items"
+            style={getButtonStyle("Auth")}
+            onClick={() => setSelectedContent("Auth")}
+          >
+            Auth
           </button>
           <button
             className="button-borderless transition-2 fs-1 p-button main-ul-items"
