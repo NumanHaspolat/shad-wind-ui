@@ -15,6 +15,27 @@ button {
   cursor: pointer;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0.1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c4c4c4;
+}
+
 .button-filled {
   background-color: white;
   /* box-shadow: rgba(230, 230, 230, 0.25) 0px 7px 9px -5px,
