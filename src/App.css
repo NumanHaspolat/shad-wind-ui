@@ -414,10 +414,19 @@ button {
 .new {
   padding: 50px;
 }
+
+.bold {
+  font-weight: 600;
+}
+
 .combobox-container {
   width: 110px;
   margin: 5px;
   position: relative;
+  cursor: pointer;
+}
+
+a {
   cursor: pointer;
 }
 
@@ -666,6 +675,11 @@ header {
   font-weight: 700;
 }
 
+.head {
+  font-size: 36px;
+  color: white;
+}
+
 .par {
   color: #a1a1aa;
   font-size: 15px;
@@ -690,6 +704,11 @@ li {
   list-style: none;
 }
 
+.cat-item:hover {
+  color: #d9d9db;
+  text-decoration: underline;
+}
+
 #main {
   display: flex;
   align-items: center;
@@ -699,6 +718,23 @@ li {
 .par-2 {
   color: #747477;
   font-size: 13px;
+}
+.par-3 {
+  color: #747477;
+  font-size: 15px;
+}
+.par-4 {
+  color: #eee7e7;
+  font-size: 15px;
+  margin: 1.5rem 0;
+}
+.par-5 {
+  color: white;
+  font-size: 15px;
+}
+
+.capital {
+  text-transform: capitalize;
 }
 
 .auth-cnt {
