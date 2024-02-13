@@ -8,8 +8,9 @@ const Header = () => {
     <main className="main">
       <header>From Vision to Reality</header>
       <p className="par">
-        Craft with Excellence: Shadcn's Best Meets Full Tailwind class
-        Integration. Accessible . Easy To Use & Open Source..
+        Craft with Excellence: Shadcn's Best Meets{" "}
+        <span className="text-underline">Full Tailwind class Integration</span>{" "}
+        . Accessible . Easy To Use & Open Source..
       </p>
       <div className="flex gap-5">
         <button

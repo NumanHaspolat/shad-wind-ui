@@ -20,18 +20,22 @@ button {
   /* box-shadow: rgba(230, 230, 230, 0.25) 0px 7px 9px -5px,
     rgba(224, 224, 224, 0.3) 0px 8px 11px -8px; */
   font-weight: 600;
-  border: 1px solid gray;
+  outline: none;
+  border: none;
   border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
 }
 
 .button-outlined {
-  border: 1px solid #27272a;
+  border: none;
+  outline: 1px solid #27272a;
   background-color: #09090b;
   /* box-shadow: rgba(100, 100, 100, 0.25) 0px 7px 9px -5px,
     rgba(85, 85, 85, 0.3) 0px 8px 11px -8px; */
   font-size: 0.9rem;
   border-radius: 0.4rem;
   color: white;
+  padding: 0.4rem 0.6rem;
 }
 .button-borderless {
   border: none;
@@ -39,6 +43,7 @@ button {
   background-color: #09090b;
   font-size: 0.9rem;
   border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
 }
 
 .input-filled {
@@ -76,7 +81,7 @@ button {
 .button-filled:hover,
 .button-outlined:hover,
 .button-borderless:hover {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .transition-1 {
@@ -162,6 +167,10 @@ button {
   border-radius: 0.5rem;
 }
 
+.text-underline {
+  text-decoration: underline;
+}
+
 .avatar {
   height: 33px;
   width: 33px;
@@ -239,11 +248,12 @@ button {
   position: relative;
   padding-top: 15px;
   margin-bottom: 1rem;
+  width: auto;
 }
 
 .form-label {
   position: absolute;
-  top: 10;
+  /* top: 10; */
   left: 0;
   padding: 0.4rem;
   pointer-events: none;
@@ -260,14 +270,19 @@ button {
   color: rgb(205, 206, 207);
 }
 
-.input-label-aniation:focus + .form-label,
-.input-label-aniation:not(:placeholder-shown).input-label-aniation:not(:focus)
+.input-label-animation:focus + .form-label,
+.input-label-animation:not(:placeholder-shown).input-label-animation:not(:focus)
   + .form-label {
   outline: none;
 }
 
-.input-label-aniation:focus {
-  border-bottom: 1px solid #828283;
+.input-label-animation {
+  width: 370px;
+  border-bottom: 1px solid #27272a;
+}
+
+.input-label-animation:focus {
+  border-bottom: 1px solid rgb(219, 219, 219);
 }
 
 .checkbox {
@@ -287,6 +302,9 @@ button {
   color: white;
   transition: 0.1s;
 }
+.flex-col {
+  flex-direction: column;
+}
 
 .checkbox:disabled + .label {
   cursor: not-allowed;
@@ -300,56 +318,6 @@ button {
 .new {
   padding: 50px;
 }
-
-.form-group {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.form-group input {
-  padding: 0;
-  height: initial;
-  width: initial;
-  margin-bottom: 0;
-  display: none;
-  cursor: pointer;
-}
-
-.form-group label {
-  position: relative;
-  cursor: pointer;
-  color: white;
-}
-
-.form-group label:before {
-  content: "";
-  background-color: transparent;
-  border: 1px solid white;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-  padding: 10px;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  cursor: pointer;
-  border-radius: 0.2rem;
-  margin-right: 13px;
-}
-
-.form-group input:checked + label:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 5px;
-  left: 7px;
-  width: 6px;
-  height: 10px;
-  border: solid white;
-  border-radius: 0.1rem;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
-}
-
 .combobox-container {
   width: 200px;
   margin: 20px;
@@ -600,11 +568,80 @@ li {
   margin: 1rem;
 }
 
+.hr {
+  height: 400px;
+  width: 1px;
+  border: 1px solid #27272a91;
+}
+
+.auth {
+  border: 1px solid #27272a;
+  padding: 2rem;
+  border-radius: 0.3rem;
+}
+
+.register-2 {
+  border: 1px solid #27272a;
+  padding: 4rem;
+  border-radius: 0.3rem;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #27272a;
+  padding: 2rem;
+  border-radius: 0.3rem;
+}
+
+.methods {
+  display: flex;
+  gap: 1rem;
+  button {
+    width: 150px;
+    padding: 0.6rem 0;
+  }
+}
+
+.method {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#Cards {
+  display: grid;
+  gap: 1rem;
+  border: 1px solid #27272a;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
 @media screen and (max-width: 1300px) {
   .main-cnt {
     width: auto !important;
   }
   .auth {
     flex-direction: column;
+    width: auto;
+    .register {
+      border-bottom: 1px solid #27272a;
+      padding-bottom: 2rem;
+    }
+    .hr {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  #Cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  #Cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
