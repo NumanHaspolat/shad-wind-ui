@@ -482,8 +482,70 @@ button {
   transition: background-color 0.3s ease;
 }
 
+.notifs {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
 .input-outlined-own {
   width: 250px;
+}
+
+.check-div {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.form-group-2 {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group-2 input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group-2 label {
+  position: relative;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.form-group-2 label:before {
+  content: "";
+  background-color: transparent;
+  border: 1px solid aliceblue;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  margin-right: 13px;
+}
+
+.form-group-2 input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 6px;
+  height: 10px;
+  border: solid aliceblue;
+  border-radius: 0.1rem;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .main {
@@ -554,6 +616,7 @@ li {
   background-color: #09090b;
   padding: 0.4rem;
   left: 200px;
+  text-align: center;
 }
 
 .right-top {
@@ -582,8 +645,11 @@ li {
 
 .register-2 {
   border: 1px solid #27272a;
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .payment {
@@ -593,15 +659,23 @@ li {
   border: 1px solid #27272a;
   padding: 2rem;
   border-radius: 0.3rem;
+  width: 400px !important;
 }
 
 .methods {
   display: flex;
   gap: 1rem;
+  margin-bottom: 1.3rem;
   button {
-    width: 150px;
+    width: 120px;
     padding: 0.6rem 0;
   }
+}
+
+.payment-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .method {
@@ -609,17 +683,65 @@ li {
   gap: 0.5rem;
 }
 
-#Cards {
-  display: grid;
-  gap: 1rem;
+.fake-repo {
   border: 1px solid #27272a;
   padding: 1rem;
+  border-radius: 0.3rem;
+  position: relative;
+}
+.star {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card-info {
+  input {
+    width: 103px !important;
+  }
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.top {
+  width: 200px;
+}
+
+.bottom {
+  display: flex;
+  gap: 2rem;
+  span {
+    display: flex;
+    gap: 0.4rem;
+  }
+}
+
+#Cards {
+  display: grid;
+  border: 1px solid #27272a;
+  padding: 1rem;
+  gap: 2rem;
   border-radius: 0.4rem;
+  grid-template-columns: repeat(3, 1fr) !important;
+  justify-content: center;
+}
+
+.notif {
+  border: 1px solid #27272a;
+  padding: 2rem;
+  border-radius: 0.3rem;
 }
 
 @media screen and (max-width: 1300px) {
   .main-cnt {
     width: auto !important;
+  }
+  #Cards {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
   .auth {
     flex-direction: column;
@@ -634,14 +756,18 @@ li {
   }
 }
 
-@media (min-width: 600px) {
+@media screen and (max-width: 600px) {
   #Cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 
-@media (min-width: 900px) {
+@media screen and (max-width: 900px) {
   #Cards {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr) !important;
+    width: auto;
+    #Card {
+      width: 439px !important;
+    }
   }
 }

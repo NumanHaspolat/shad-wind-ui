@@ -4,7 +4,7 @@ import { FaGoogle } from "react-icons/fa";
 
 const Register2 = () => {
   return (
-    <div className="auth-cnt register-2" id="Card">
+    <div className="register-2" id="Card">
       <h3>Create an account</h3>
       <p className="par-2">Enter your details below to create your account</p>
 
@@ -39,39 +39,21 @@ const Register2 = () => {
         </button>
       </div>
       <span className="or-with">OR CONTINUE WITH</span>
-      <div class="form-group">
-        <input
-          type="text"
-          id="email"
-          className="form-control input-label-animation p-input b-radius-3 fs-1"
-          placeholder=" "
-        />
-        <label htmlFor="email" className="form-label fs-1">
-          Username
-        </label>
-      </div>
-      <div class="form-group">
-        <input
-          type="text"
-          id="email"
-          className="form-control input-label-animation p-input b-radius-3 fs-1"
-          placeholder=" "
-        />
-        <label htmlFor="email" className="form-label fs-1">
-          Email
-        </label>
-      </div>
-      <div class="form-group">
-        <input
-          type="text"
-          id="email"
-          className="form-control input-label-animation p-input b-radius-3 fs-1"
-          placeholder=" "
-        />
-        <label htmlFor="email" className="form-label fs-1">
-          Password
-        </label>
-      </div>
+      <input
+        type="text"
+        className="input-outlined p-input b-radius-3 italic transition-1"
+        placeholder="Username"
+      />
+      <input
+        type="text"
+        className="input-outlined p-input b-radius-3 italic transition-1"
+        placeholder="Email"
+      />
+      <input
+        type="text"
+        className="input-outlined p-input b-radius-3 italic transition-1"
+        placeholder="Password"
+      />
       <button className="button-filled transition-2 fs-1 ">
         Sign In with Email
       </button>

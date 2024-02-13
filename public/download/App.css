@@ -5564,12 +5564,12 @@ button {
   padding: 50px;
 }
 
-.form-group {
+.form-group-2 {
   display: block;
   margin-bottom: 15px;
 }
 
-.form-group input {
+.form-group-2 input {
   padding: 0;
   height: initial;
   width: initial;
@@ -5578,13 +5578,13 @@ button {
   cursor: pointer;
 }
 
-.form-group label {
+.form-group-2 label {
   position: relative;
   cursor: pointer;
   color: aliceblue;
 }
 
-.form-group label:before {
+.form-group-2 label:before {
   content: "";
   background-color: transparent;
   border: 1px solid aliceblue;
@@ -5599,7 +5599,7 @@ button {
   margin-right: 13px;
 }
 
-.form-group input:checked + label:after {
+.form-group-2 input:checked + label:after {
   content: "";
   display: block;
   position: absolute;
