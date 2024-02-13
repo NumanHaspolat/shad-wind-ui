@@ -485,18 +485,12 @@ button {
 .notifs {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   margin-top: 1rem;
 }
 
 .input-outlined-own {
   width: 250px;
-}
-
-.check-div {
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
 }
 
 .form-group-2 {
@@ -608,6 +602,18 @@ li {
   text-align: center;
   justify-content: center;
 }
+
+.form-group-2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group-2 input {
+  margin-right: 10px; /* Label'ın hemen solunda olacak şekilde input ve label arasında boşluk */
+}
+
+/* Diğer CSS kurallarınız... */
 
 .or-with {
   color: #747477;

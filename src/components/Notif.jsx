@@ -15,25 +15,28 @@ const Notif = () => {
       <h4>Notifications</h4>
       <p className="par-2">Choose what you want to be notified about.</p>
       <div className="notifs">
-        <div className="form-group-2">
-          <div className="check-div">
-            <input
-              type="checkbox"
-              id="everything"
-              name="notifications"
-              value="everything"
-              checked={selectedOption === "everything"}
-              onChange={handleChange}
-            />
-            <label htmlFor="everything" className="par-2">
-              <h4 className="flex gap-2 items-center">
-                Everything <IoIosNotificationsOutline fontSize={23} />
-              </h4>
+        <div className="form-group-2 flex items-center">
+          <input
+            type="checkbox"
+            id="everything"
+            name="notifications"
+            value="everything"
+            checked={selectedOption === "everything"}
+            onChange={handleChange}
+          />
+          <label
+            htmlFor="everything"
+            className="flex gap-2 items-center cursor-pointer"
+          ></label>
+          <div>
+            {" "}
+            <span>Everything</span> <IoIosNotificationsOutline fontSize={23} />
+            <span className="par-2">
               Email digest, mentions & all activity.
-            </label>
+            </span>
           </div>
         </div>
-        <div className="form-group-2">
+        <div className="form-group-2 flex items-center">
           <input
             type="checkbox"
             id="available"
@@ -42,14 +45,15 @@ const Notif = () => {
             checked={selectedOption === "available"}
             onChange={handleChange}
           />
-          <label htmlFor="available" className="par-2">
-            <h4 className="flex gap-2 items-center">
-              Available <FiUser fontSize={23} />
-            </h4>
-            Only mentions and comments.
+          <label
+            htmlFor="available"
+            className="flex gap-2 items-center cursor-pointer"
+          >
+            <span>Available</span> <FiUser fontSize={23} />
+            <span className="par-2">Only mentions and comments.</span>
           </label>
         </div>
-        <div className="form-group-2">
+        <div className="form-group-2 flex items-center">
           <input
             type="checkbox"
             id="ignoring"
@@ -58,11 +62,12 @@ const Notif = () => {
             checked={selectedOption === "ignoring"}
             onChange={handleChange}
           />
-          <label htmlFor="ignoring" className="par-2">
-            <h4 className="flex gap-2 items-center">
-              Ignoring <FaRegEyeSlash fontSize={23} />
-            </h4>
-            Turn off all notifications.
+          <label
+            htmlFor="ignoring"
+            className="flex gap-2 items-center cursor-pointer"
+          >
+            <span>Ignoring</span> <FaRegEyeSlash fontSize={23} />
+            <span className="par-2">Turn off all notifications.</span>
           </label>
         </div>
       </div>
