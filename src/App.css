@@ -172,8 +172,8 @@ button {
 }
 
 .avatar {
-  height: 33px;
-  width: 33px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
 }
 
@@ -315,13 +315,21 @@ button {
   color: #c4c4c4;
 }
 
+.date-picker .react-datepicker {
+  border: 1px solid #27272a;
+  background-color: bla;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 .new {
   padding: 50px;
 }
 .combobox-container {
-  width: 200px;
-  margin: 20px;
+  width: 100px;
+  margin: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 .combobox {
@@ -532,7 +540,7 @@ button {
   content: "";
   display: block;
   position: absolute;
-  top: 5px;
+  top: 3px;
   left: 7px;
   width: 6px;
   height: 10px;
@@ -724,6 +732,18 @@ li {
     display: flex;
     gap: 0.4rem;
   }
+}
+
+.share-doc {
+  border: 1px solid #27272a;
+  padding: 1rem 1.2rem;
+  border-radius: 0.3rem;
+}
+
+.border-bot {
+  border-bottom: 1px solid #27272a;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #Cards {

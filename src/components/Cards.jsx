@@ -1,8 +1,9 @@
 import React from "react";
 import Register2 from "./Register2";
 import Payment from "./Payment";
-import FakeRepo from "./FakeRepo";
 import CardsRight from "./CardsRight";
+import ShareDoc from "./ShareDoc";
+import CardsMid from "./CardsMid";
 
 const Cards = () => {
   return (
@@ -10,6 +11,8 @@ const Cards = () => {
       <Register2 />
       <Payment />
       <CardsRight />
+      <ShareDoc />
+      <CardsMid />
     </div>
   );
 };

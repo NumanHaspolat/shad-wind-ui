@@ -29,8 +29,9 @@ const Notif = () => {
             className="flex gap-2 items-center cursor-pointer"
           ></label>
           <div>
-            {" "}
-            <span>Everything</span> <IoIosNotificationsOutline fontSize={23} />
+            <span className="flex items-center gap-3">
+              Everything <IoIosNotificationsOutline fontSize={23} />
+            </span>
             <span className="par-2">
               Email digest, mentions & all activity.
             </span>
@@ -48,12 +49,15 @@ const Notif = () => {
           <label
             htmlFor="available"
             className="flex gap-2 items-center cursor-pointer"
-          >
-            <span>Available</span> <FiUser fontSize={23} />
+          ></label>
+          <div>
+            <span className="flex items-center gap-3">
+              Available <FiUser fontSize={23} />
+            </span>
             <span className="par-2">Only mentions and comments.</span>
-          </label>
+          </div>
         </div>
-        <div className="form-group-2 flex items-center">
+        <div className="form-group-2">
           <input
             type="checkbox"
             id="ignoring"
@@ -65,10 +69,13 @@ const Notif = () => {
           <label
             htmlFor="ignoring"
             className="flex gap-2 items-center cursor-pointer"
-          >
-            <span>Ignoring</span> <FaRegEyeSlash fontSize={23} />
+          ></label>
+          <div>
+            <span className="flex items-center gap-3">
+              Ignoring <FaRegEyeSlash fontSize={23} />
+            </span>
             <span className="par-2">Turn off all notifications.</span>
-          </label>
+          </div>
         </div>
       </div>
     </div>
