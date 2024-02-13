@@ -7,7 +7,6 @@ const Auth = () => {
   return (
     <div className="auth">
       <Register />
-      {/*  */}
       <div className="hr"></div>
       <Login />
     </div>

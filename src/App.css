@@ -683,6 +683,7 @@ header {
 .main-ul {
   display: flex;
   gap: 0.7rem;
+  margin: 0.5rem;
 }
 
 li {
@@ -929,10 +930,10 @@ a {
   position: absolute;
   background-color: #09090b;
   width: 100%;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .dropdown-item {
@@ -941,7 +942,7 @@ a {
   cursor: pointer;
   font-size: 14px;
   color: white;
-  border-radius: 0.4rem;
+  border-radius: 0.2rem;
   background-color: #09090b;
 }
 
@@ -949,6 +950,11 @@ a {
   background-color: #27272a;
 }
 
+.method.selected {
+  background-color: white;
+  color: #09090b;
+  font-weight: 600;
+}
 @media screen and (max-width: 1300px) {
   .main-cnt {
     width: auto !important;

@@ -64,7 +64,7 @@ const TeamMem = () => {
               <p className="par-2">n@example.com</p>
             </div>
           </div>
-          <Combobox roles={roles} />
+          <Combobox roles={roles} defaultValue={"Developer"} />
         </div>
         <div className="user flex space-between items-center">
           <div className="left-user flex gap-5">
@@ -78,7 +78,7 @@ const TeamMem = () => {
               <p className="par-2">l@example.com</p>
             </div>
           </div>
-          <Combobox roles={roles} />
+          <Combobox roles={roles} defaultValue={"Designer"} />
         </div>
         <div className="user flex space-between items-center">
           <div className="left-user flex gap-5">
@@ -92,7 +92,7 @@ const TeamMem = () => {
               <p className="par-2">z@example.com</p>
             </div>
           </div>
-          <Combobox roles={roles} />
+          <Combobox roles={roles} defaultValue={"Billing"} />
         </div>
       </div>
     </div>

@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import Combobox from "./Combobox";
 
 const ShareDoc = () => {
+  const [roles, setRoles] = useState(["Can Edit", "Can View"]);
+  const handleChange = () => {
+  };
   return (
     <div className="share-doc">
       <h4>Share this document</h4>
@@ -12,6 +16,7 @@ const ShareDoc = () => {
           className="input-outlined p-input b-radius-3 transition-1 color-light"
           placeholder=""
           value={"http://example.com/link/to/document"}
+          onChange={handleChange}
         />
         <button className="button-filled transition-1">Copy Link</button>
       </div>
@@ -36,13 +41,7 @@ const ShareDoc = () => {
               <p className="par-2">s@example.com</p>
             </div>
           </div>
-          <div className="combobox-container">
-            <IoIosArrowDown color="white" className="arrowIcon" />
-            <select id="framework-select" className="combobox">
-              <option value="edit">Can edit</option>
-              <option value="view">Can view</option>
-            </select>
-          </div>
+          <Combobox roles={roles} defaultValue={"Can Edit"} />
         </div>
         <div className="user flex space-between items-center">
           <div className="left-user flex gap-5">
@@ -56,14 +55,7 @@ const ShareDoc = () => {
               <p className="par-2">c@example.com</p>
             </div>
           </div>
-          <div className="combobox-container">
-            <IoIosArrowDown color="white" className="arrowIcon" />
-            <select id="framework-select" className="combobox">
-              {" "}
-              <option value="view">Can view</option>
-              <option value="edit">Can edit</option>
-            </select>
-          </div>
+          <Combobox roles={roles} defaultValue={"Can View"} />
         </div>
         <div className="user flex space-between items-center">
           <div className="left-user flex gap-5">
@@ -77,13 +69,7 @@ const ShareDoc = () => {
               <p className="par-2">mc@example.com</p>
             </div>
           </div>
-          <div className="combobox-container">
-            <IoIosArrowDown color="white" className="arrowIcon" />
-            <select id="framework-select" className="combobox">
-              <option value="edit">Can edit</option>
-              <option value="view">Can view</option>
-            </select>
-          </div>
+          <Combobox roles={roles} defaultValue={"Can View"} />
         </div>
         <div className="user flex space-between items-center">
           <div className="left-user flex gap-5">
@@ -97,13 +83,7 @@ const ShareDoc = () => {
               <p className="par-2">r@example.com</p>
             </div>
           </div>
-          <div className="combobox-container">
-            <IoIosArrowDown color="white" className="arrowIcon" />
-            <select id="framework-select" className="combobox">
-              <option value="view">Can view</option>
-              <option value="edit">Can edit</option>
-            </select>
-          </div>
+          <Combobox roles={roles} defaultValue={"Can Edit"} />
         </div>
       </div>
     </div>

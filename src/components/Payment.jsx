@@ -1,25 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdPayment } from "react-icons/md";
-import { FaPaypal } from "react-icons/fa";
-import { FaApple } from "react-icons/fa";
+import { FaPaypal, FaApple } from "react-icons/fa";
 
 const Payment = () => {
+  const [selectedMethod, setSelectedMethod] = useState(null);
+
+  const handleClick = (method) => {
+    setSelectedMethod(method);
+    console.log(method);
+  };
+
+  const getButtonClass = (method) => {
+    let baseClass = "method button-outlined transition-1 flex flex-col";
+    if (method === selectedMethod) {
+      baseClass += " selected";
+    }
+    return baseClass;
+  };
+
   return (
     <div className="payment flex flex-col" id="Card">
       <h3 className="head">Payment Method</h3>
       <p className="par-2">Add a new payment method to your account.</p>
       <div className="methods">
-        <button className="method button-outlined transition-2 flex flex-col">
+        <button
+          className={getButtonClass("Card")}
+          onClick={() => handleClick("Card")}
+        >
           <MdPayment fontSize={30} />
           Card
         </button>
-        <button className="button-outlined transition-2 flex flex-col method">
+        <button
+          className={getButtonClass("Paypal")}
+          onClick={() => handleClick("Paypal")}
+        >
           <FaPaypal fontSize={30} />
           Paypal
         </button>
-        <button className="button-outlined transition-2 flex flex-col method">
-          <FaApple fontSize={30} />
-          Apple
+        <button
+          className={getButtonClass("Apple")}
+          onClick={() => handleClick("Apple")}
+        >
+          <FaApple fontSize={30} /> Apple
         </button>
       </div>
       <div className="payment-inputs">

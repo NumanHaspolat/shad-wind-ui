@@ -23,6 +23,10 @@ const Main = () => {
   const getButtonStyle = (buttonName) => {
     return {
       color: selectedContent === buttonName ? "white" : "",
+      backgroundColor: selectedContent === buttonName ? "#27272A" : "",
+      fontWeight: selectedContent === buttonName ? "600" : "",
+      borderRadius: selectedContent === buttonName ? "1rem" : "",
+      padding: selectedContent === buttonName ? ".2rem 1rem" : "",
     };
   };
 
