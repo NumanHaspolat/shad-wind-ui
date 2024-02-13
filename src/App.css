@@ -175,6 +175,7 @@ button {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .b-radius-50 {
@@ -388,10 +389,16 @@ button {
   padding: 50px;
 }
 .combobox-container {
-  width: 100px;
+  width: 110px;
   margin: 5px;
   position: relative;
   cursor: pointer;
+}
+
+.mail {
+  border: 1px solid #27272a;
+  padding: 1rem;
+  border-radius: 0.3rem;
 }
 
 .combobox {
@@ -728,6 +735,12 @@ li {
   gap: 1rem;
 }
 
+.mail-div {
+  padding: 1rem;
+  border: 1px solid #27272a;
+  border-radius: 0.3rem;
+}
+
 .payment {
   display: flex;
   flex-direction: column;
@@ -736,6 +749,13 @@ li {
   padding: 2rem;
   border-radius: 0.3rem;
   width: 400px !important;
+}
+
+.team {
+  border: 1px solid #27272a;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  padding-bottom: 1.3rem;
 }
 
 .methods {
@@ -764,6 +784,7 @@ li {
   padding: 1rem;
   border-radius: 0.3rem;
   position: relative;
+  padding-bottom: 1.6rem;
 }
 .star {
   position: absolute;
@@ -808,7 +829,13 @@ li {
   padding-bottom: 1rem;
 }
 
+.hori {
+  border-bottom: 1px solid #27272a;
+  margin: 1rem 0;
+}
+
 #Cards {
+  margin-bottom: 1rem;
   display: grid;
   border: 1px solid #27272a;
   padding: 1rem;

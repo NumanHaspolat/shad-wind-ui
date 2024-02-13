@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "../App.css";
+
 const DatePickerComp = () => {
   const [startDate, setStartDate] = useState(new Date());
 
@@ -26,11 +27,14 @@ const DatePickerComp = () => {
       >
         Pick a date
       </p>
-      <DatePicker
-        selected={startDate}
-        onChange={(date) => setStartDate(date)}
-        renderDayContents={renderDayContents}
-      />
+      <div className="flex space-between">
+        <DatePicker
+          selected={startDate}
+          onChange={(date) => setStartDate(date)}
+          renderDayContents={renderDayContents}
+        />
+        <button className="button-filled transition-1">Submit</button>
+      </div>
     </div>
   );
 };

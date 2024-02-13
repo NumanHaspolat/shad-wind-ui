@@ -1,5 +1,5 @@
 import React from "react";
-import { FaArrowDownShortWide } from "react-icons/fa6";
+import { FaArrowDown } from "react-icons/fa";
 
 const ShareDoc = () => {
   return (
@@ -37,7 +37,7 @@ const ShareDoc = () => {
             </div>
           </div>
           <div className="combobox-container">
-            <FaArrowDownShortWide color="white" className="arrowIcon" />
+            <FaArrowDown color="white" className="arrowIcon" />
             <select id="framework-select" className="combobox">
               <option value="edit">Can edit</option>
               <option value="view">Can view</option>
@@ -57,10 +57,11 @@ const ShareDoc = () => {
             </div>
           </div>
           <div className="combobox-container">
-            <FaArrowDownShortWide color="white" className="arrowIcon" />
+            <FaArrowDown color="white" className="arrowIcon" />
             <select id="framework-select" className="combobox">
-              <option value="edit">Can edit</option>
+              {" "}
               <option value="view">Can view</option>
+              <option value="edit">Can edit</option>
             </select>
           </div>
         </div>
@@ -72,17 +73,35 @@ const ShareDoc = () => {
               className="avatar"
             />
             <div className="user-info">
-              <p>Simeon Mckinney</p>
+              <p>Sam Mckinney</p>
               <p className="par-2">mc@example.com</p>
             </div>
           </div>
           <div className="combobox-container">
-            <FaArrowDownShortWide color="white" className="arrowIcon" />
+            <FaArrowDown color="white" className="arrowIcon" />
             <select id="framework-select" className="combobox">
-              <option value="edit">
-                Can edit
-              </option>
+              <option value="edit">Can edit</option>
               <option value="view">Can view</option>
+            </select>
+          </div>
+        </div>
+        <div className="user flex space-between items-center">
+          <div className="left-user flex gap-5">
+            <img
+              src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg"
+              alt=""
+              className="avatar"
+            />
+            <div className="user-info">
+              <p>Remi Weaver</p>
+              <p className="par-2">r@example.com</p>
+            </div>
+          </div>
+          <div className="combobox-container">
+            <FaArrowDown color="white" className="arrowIcon" />
+            <select id="framework-select" className="combobox">
+              <option value="view">Can view</option>
+              <option value="edit">Can edit</option>
             </select>
           </div>
         </div>

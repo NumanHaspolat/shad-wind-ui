@@ -4,15 +4,17 @@ import Payment from "./Payment";
 import CardsRight from "./CardsRight";
 import ShareDoc from "./ShareDoc";
 import CardsMid from "./CardsMid";
+import Mails from "./Mails";
 
 const Cards = () => {
   return (
     <div id="Cards">
       <Register2 />
-      <Payment />
+      <CardsMid />
       <CardsRight />
       <ShareDoc />
-      <CardsMid />
+      <Payment />
+      <Mails />
     </div>
   );
 };
