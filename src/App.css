@@ -315,11 +315,73 @@ button {
   color: #c4c4c4;
 }
 
-.date-picker .react-datepicker {
+.date-picker-container {
   border: 1px solid #27272a;
-  background-color: bla;
-  border-radius: 10px;
-  padding: 10px;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.date-picker-container .react-datepicker__day--keyboard-selected,
+.date-picker-container .react-datepicker__day--selected {
+  background-color: white;
+  color: white !important; /* Seçili gün için arkaplan rengi */
+}
+
+.react-datepicker__day--selected:hover {
+  background-color: #09090b;
+}
+
+.date-picker-container .react-datepicker__day:hover {
+  outline: 1px solid #27272a;
+  background-color: #09090b;
+  color: white;
+}
+
+.day-content {
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.date-picker-container .react-datepicker__input-container input {
+  background-color: #09090b;
+  outline: 1px solid #27272a;
+  border: none;
+  color: white;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.date-picker-container .react-datepicker__day--weekend {
+  color: #606064;
+}
+
+.date-picker-container .react-datepicker {
+  background-color: #09090b;
+  border: 1px solid #ddd;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.15);
+}
+
+.date-picker-container .react-datepicker__day {
+  color: white;
+}
+
+.date-picker-container .react-datepicker__day--selected {
+  background-color: white; /* Seçili gün için arka plan rengi */
+  color: black !important; /* Seçili gün için yazı rengi */
+}
+
+.date-picker-container .react-datepicker__day--selected:hover {
+  background-color: white; /* Seçili gün için arka plan rengi */
+  color: black !important; /* Seçili gün için yazı rengi */
+}
+
+.date-picker-container .react-datepicker__day--today {
+  font-weight: bold;
+  color: #09090b !important;
 }
 
 .new {
