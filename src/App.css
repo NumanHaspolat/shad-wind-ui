@@ -519,7 +519,7 @@ a {
 .menubar-item {
   font-weight: 600;
   font-size: 13px;
-  background-color: #09090b;
+  /* background-color: #09090b; */
 }
 
 .hover-card {
@@ -708,6 +708,16 @@ header {
   font-weight: 700;
 }
 
+.preview {
+  background-color: #0f0f12;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #27272a;
+}
+
 .head {
   font-size: 36px;
   color: white;
@@ -715,6 +725,11 @@ header {
 .head-2 {
   font-size: 26px;
   margin: 2rem 0;
+  color: white;
+}
+.head-3 {
+  font-size: 19px;
+  margin: 1rem 0;
   color: white;
 }
 

@@ -20,20 +20,23 @@ const CodePreview = ({ code }) => {
 
   const customStyle = {
     ...atomOneDark,
-    tag: {
-      color: "#FFFFFF",
-    },
-    keyword: {
-      color: "#878788",
+    tag: { color: "#FFFFFF" },
+    keyword: { color: "#878788" },
+    string: { color: "#878788" },
+    function: { color: "#FFFFFF" },
+    number: { color: "#00c3ff" },
+    pre: {
+      whiteSpace: "pre-wrap",
+      wordBreak: "break-word",
     },
   };
-
   return (
     <div style={{ position: "relative", margin: "2rem 0" }}>
       <SyntaxHighlighter
         language="jsx"
         style={customStyle}
         showLineNumbers={true}
+        wrapLongLines={true}
         customStyle={{
           padding: ".8rem",
           background: "#18181B",
@@ -41,6 +44,7 @@ const CodePreview = ({ code }) => {
           borderRadius: ".3rem",
           color: "white",
           fontSize: "14px",
+          overflowX: "auto",
         }}
       >
         {code.trim()}
