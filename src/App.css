@@ -585,7 +585,6 @@ a {
 
 .logo {
   padding: 0.1rem;
-  border-right: 1px solid #27272a;
   cursor: pointer;
   padding-right: 0.9rem;
 }
@@ -928,6 +927,11 @@ li {
   padding-bottom: 1rem;
 }
 
+.border-bot-2 {
+  border-bottom: 1px solid #27272a;
+  margin-top: 1.4rem;
+}
+
 .hori {
   border-bottom: 1px solid #27272a;
   margin: 1rem 0;
@@ -951,7 +955,7 @@ li {
 }
 
 #docs {
-  width: 1200px;
+  width: 1000px;
   margin: auto;
   padding: 1rem;
 }
@@ -1038,6 +1042,59 @@ a {
 .cat-item:hover {
   color: #bbbbbd;
   text-decoration: underline;
+}
+
+.faq {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  border-bottom: 1px solid #27272a;
+  padding-bottom: 1rem;
+}
+
+.accordion {
+  max-width: 700px;
+}
+
+.turn-up {
+  transition: 0.3s;
+  transform: rotate(-180deg);
+}
+
+.turn-down {
+  transition: 0.3s;
+  transform: rotate(-360deg);
+}
+
+.accordion {
+  margin-top: 2rem;
+}
+
+.accordion-content {
+  padding: 1rem;
+  font-size: 14px;
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.accordion-content.open {
+  max-height: 1000px; /* Bu değer yeterince büyük olmalı ki içerik tamamen açılabilsin. */
+}
+
+.accordion-trigger {
+  background-color: #09090b;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.acc-flex-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1300px) {

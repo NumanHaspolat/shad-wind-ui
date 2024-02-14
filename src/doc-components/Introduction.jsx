@@ -1,6 +1,27 @@
 import React from "react";
+import Accordion from "../components/Accordion";
 
 const Introduction = ({ selectedDoc }) => {
+  const accordionItems = [
+    {
+      title: "Why copy/paste and not packaged as a dependency?",
+      desc: `The idea behind this is to give you ownership and control over the code, allowing you to decide how the components are built and styled.`,
+    },
+    {
+      title: "Do you plan to publish it as an npm package?",
+      desc: "No. I have no plans to publish it as an npm package.",
+    },
+    {
+      title: "Can I use this in my project?",
+      desc: `Yes. Free to use for personal and commercial projects. No attribution required.`,
+    },
+    {
+      title: "Why you should use shadwind/ui?",
+      desc: `Because shadwind includes all tailwind class names and also brings the perfect shadcn style.
+      `,
+    },
+  ];
+
   return (
     <div className="intro">
       <span className="par-2">
@@ -39,6 +60,8 @@ const Introduction = ({ selectedDoc }) => {
       >
         Use this as a reference to build your own component libraries.
       </p>
+
+      <Accordion accordionItems={accordionItems} />
     </div>
   );
 };
