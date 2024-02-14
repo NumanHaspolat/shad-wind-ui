@@ -8,16 +8,16 @@ const Catalogs = ({ setSelectedDoc, selectedDoc }) => {
   ];
 
   const componentsLinks = [
-    { name: "Buttons", path: "buttons" },
-    { name: "Inputs", path: "inputs" },
+    { name: "Button", path: "button" },
+    { name: "Input", path: "input" },
     { name: "Checkbox", path: "checkbox" },
     { name: "Menubar", path: "menubar" },
     { name: "Combobox", path: "combobox" },
     { name: "Avatar", path: "avatar" },
-    { name: "Login Page", path: "login-page" },
-    { name: "Register Page", path: "register-page" },
+    { name: "Login Page", path: "login" },
+    { name: "Register Page", path: "register" },
     { name: "Horizontal", path: "horizontal" },
-    { name: "Date Picker", path: "Date Picker" },
+    { name: "Date Picker", path: "date" },
   ];
   return (
     <div className="catalogs">
