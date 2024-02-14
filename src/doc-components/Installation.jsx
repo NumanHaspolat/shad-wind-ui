@@ -39,13 +39,24 @@ const Installation = ({ selectedDoc }) => {
         <p> and let me show you how to use it in our project.</p>
       </div>
       <h2 className="head">Lets Get Started</h2>
-      <p className="par-3 border-bot">How to use classes.</p>
+      <p className="par-3">How to use classes.</p>
       <CodePreview
-        code={`      <p className="par-4">
-        First of all, you do not need to use any commands to install shadwind
-        ui, just download the shadwind-ui.css file below and integrate it into
-        your project.
-      </p>`}
+        code={`      import React from "react";
+        import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+        import {
+          materialDark,
+        } from "react-syntax-highlighter/dist/esm/styles/prism";
+        
+        const CodePreview = ({ code }) => {
+          return (
+            <SyntaxHighlighter language="jsx" style={materialDark}>
+              {code.trim()}
+            </SyntaxHighlighter>
+          );
+        };
+        
+        export default CodePreview;
+        `}
       />
     </div>
   );

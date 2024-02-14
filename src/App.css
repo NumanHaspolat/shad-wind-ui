@@ -696,6 +696,12 @@ a {
   margin: 4rem;
 }
 
+.copy-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 header {
   font-size: 60px;
   color: white;
