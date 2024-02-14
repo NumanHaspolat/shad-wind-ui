@@ -27,7 +27,7 @@ const AccordionItem = ({ title, desc }) => {
         />
       </div>
 
-      <div className={isOpen ? "" : "border-bot-2"}></div>
+      <div className={isOpen ? "height-tr" : "border-bot-2"}></div>
       {isOpen && <div className="accordion-content">{desc}</div>}
       <div className={isOpen && "border-bot-2"}></div>
     </div>

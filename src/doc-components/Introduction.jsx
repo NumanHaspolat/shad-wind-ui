@@ -56,6 +56,7 @@ const Introduction = ({ selectedDoc }) => {
         className="par-5 italic"
         style={{
           color: "GrayText",
+          marginTop: "2rem",
         }}
       >
         Use this as a reference to build your own component libraries.

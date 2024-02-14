@@ -706,6 +706,11 @@ header {
   font-size: 36px;
   color: white;
 }
+.head-2 {
+  font-size: 26px;
+  margin: 2rem 0;
+  color: white;
+}
 
 .par {
   color: #a1a1aa;
@@ -748,7 +753,7 @@ li {
 .par-4 {
   color: #eee7e7;
   font-size: 15px;
-  margin: 1.5rem 0;
+  margin-top: 2.5rem;
 }
 .par-5 {
   color: white;
@@ -1081,6 +1086,10 @@ a {
 
 .accordion-content.open {
   max-height: 1000px; /* Bu değer yeterince büyük olmalı ki içerik tamamen açılabilsin. */
+}
+
+.height-tr {
+  transition: 0.5s;
 }
 
 .accordion-trigger {
