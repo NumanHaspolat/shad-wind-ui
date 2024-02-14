@@ -4,9 +4,9 @@ import INavbar from "./components/INavbar";
 import Home from "./pages/Home";
 import Docs from "./pages/Docs";
 import Examples from "./pages/Examples";
-import GetStarted from "./pages/GetStarted";
 import Introduction from "./doc-components/Introduction";
 import Installation from "./doc-components/Installation";
+import Footer from "./components/Footer";
 
 const AppRouter = () => {
   return (
@@ -20,8 +20,8 @@ const AppRouter = () => {
         </Route>
         <Route path="/docs" element={<Docs />} />
         <Route path="/examples" element={<Examples />} />
-        <Route path="/get-started" element={<GetStarted />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

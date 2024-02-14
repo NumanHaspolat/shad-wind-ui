@@ -12,7 +12,7 @@ const FakeRepo = () => {
             Craft with Excellence: Shadcn's Best Meets Full Tailwind classes
           </p>
         </div>
-        <div className="bottom flex items-center gap-2 fs-1">
+        <div className="bottom fs-1">
           <span>
             <svg
               width="15"

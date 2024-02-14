@@ -39,7 +39,7 @@ const Header = () => {
         ".header-out",
         { opacity: 0, y: 30 },
         { opacity: 1, y: 0, duration: 1 },
-        "-=.90"
+        "-=1.1"
       );
 
     return () => {
@@ -61,7 +61,7 @@ const Header = () => {
       <div className="flex gap-5">
         <button
           className="button-filled transition-2 fs-1 p-button header-fill"
-          onClick={() => navTo("/get-started")}
+          onClick={() => navTo("/docs")}
         >
           Get Started
         </button>
