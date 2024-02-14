@@ -977,6 +977,7 @@ li {
 .notif {
   border: 1px solid #27272a;
   padding: 2rem;
+  padding-bottom: 2.2rem;
   border-radius: 0.3rem;
 }
 
