@@ -16,7 +16,7 @@ const Docs = () => {
       <div style={{ flex: 1 }}>
         <Catalogs setSelectedDoc={setSelectedDoc} selectedDoc={selectedDoc} />
       </div>
-      <div style={{ flex: 3 }}>{docComponents[selectedDoc]}</div>
+      <div style={{ flex: 4 }}>{docComponents[selectedDoc]}</div>
     </div>
   );
 };

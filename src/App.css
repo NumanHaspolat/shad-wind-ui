@@ -465,10 +465,6 @@ a {
   border-top: 1px solid #27272a;
   padding: 2.2rem;
   margin-top: 1rem;
-  height: 160px !important;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   .footer-div {
     color: white;
@@ -484,6 +480,17 @@ a {
       text-decoration: underline;
     }
   }
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* İçerik bölümü için stil */
+.content-wrap {
+  flex: 1;
 }
 
 .container {
@@ -725,11 +732,6 @@ li {
   list-style: none;
 }
 
-.cat-item:hover {
-  color: #bbbbbd;
-  text-decoration: underline;
-}
-
 #main {
   display: flex;
   align-items: center;
@@ -958,6 +960,7 @@ li {
   display: flex;
   gap: 1.4rem;
   position: sticky;
+  top: 70px;
   padding: 0.6rem;
 
   flex-direction: column;
@@ -1026,6 +1029,15 @@ a {
 
 .cat-item-selected {
   color: white !important;
+}
+
+.cat-item {
+  font-size: 14px !important;
+}
+
+.cat-item:hover {
+  color: #bbbbbd;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1300px) {

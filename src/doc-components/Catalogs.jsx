@@ -21,7 +21,7 @@ const Catalogs = ({ setSelectedDoc, selectedDoc }) => {
   ];
   return (
     <div className="catalogs">
-      <div className="get-start-cat flex flex-col gap-2">
+      <div className="get-start-cat flex flex-col gap-3">
         <p className="fs-2">Getting Started</p>
         {gettingStartedLinks.map((link) => (
           <Link
@@ -37,7 +37,7 @@ const Catalogs = ({ setSelectedDoc, selectedDoc }) => {
         ))}
       </div>
 
-      <div className="comps-cat flex flex-col gap-2">
+      <div className="comps-cat flex flex-col gap-3">
         <p>Components</p>
         {componentsLinks.map((link) => (
           <Link
