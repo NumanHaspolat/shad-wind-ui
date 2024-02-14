@@ -1100,13 +1100,6 @@ a {
   padding: 1rem;
   font-size: 14px;
   color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-}
-
-.accordion-content.open {
-  max-height: 1000px; /* Bu değer yeterince büyük olmalı ki içerik tamamen açılabilsin. */
 }
 
 .height-tr {
