@@ -622,8 +622,8 @@ a {
   position: sticky !important;
   top: 0 !important;
   z-index: 50;
-  -webkit-backdrop-filter: blur(10px) !important;
-  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(9px) !important;
   transition: background-color 0.3s ease;
 }
 
@@ -915,6 +915,10 @@ li {
 }
 
 .card-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   input {
     width: 103px !important;
   }
@@ -1016,6 +1020,10 @@ a {
 
 .arrowIcon {
   cursor: pointer;
+}
+
+.header-head {
+  text-align: center;
 }
 
 .combobox {
@@ -1129,6 +1137,15 @@ a {
     width: auto !important;
   }
 
+  .methods {
+    justify-content: center;
+  }
+
+  .payment {
+    width: auto !important;
+    text-align: center;
+  }
+
   .footer-div {
     width: auto !important;
   }
@@ -1148,18 +1165,25 @@ a {
   }
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 900px) {
+  /* TODO navbar responsive */
+  .input-outlined-own {
+    width: 100% !important;
+  }
+
+  .nav-items-div {
+    display: none;
+  }
+
   #Cards {
     grid-template-columns: repeat(1, 1fr) !important;
+    margin: 1rem;
   }
 }
 
-@media screen and (max-width: 900px) {
-  #Cards {
-    grid-template-columns: repeat(1, 1fr) !important;
+@media screen and (max-width: 600px) {
+  .header-par {
     width: auto;
-    #Card {
-      width: 439px !important;
-    }
   }
 }

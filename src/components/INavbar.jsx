@@ -30,24 +30,26 @@ const INavbar = () => {
             />
             shadwind/ui
           </h4>
-          <button
-            className={menuItemClass("/docs")}
-            onClick={() => navigateTo("/docs")}
-          >
-            Docs
-          </button>
-          <button
-            className={menuItemClass("/examples")}
-            onClick={() => navigateTo("/examples")}
-          >
-            Examples
-          </button>
-          <button
-            className={menuItemClass("/get-started")}
-            onClick={() => navigateTo("/get-started")}
-          >
-            Get Started
-          </button>
+          <div className="nav-items-div">
+            <button
+              className={menuItemClass("/docs/introduction")}
+              onClick={() => navigateTo("/docs/introduction")}
+            >
+              Docs
+            </button>
+            <button
+              className={menuItemClass("/examples")}
+              onClick={() => navigateTo("/examples")}
+            >
+              Examples
+            </button>
+            <button
+              className={menuItemClass("/docs/installation")}
+              onClick={() => navigateTo("/docs/installation")}
+            >
+              Get Started
+            </button>
+          </div>
         </div>
 
         <div className="right-nav">

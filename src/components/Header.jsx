@@ -53,7 +53,7 @@ const Header = () => {
         Not fully responsive - Demo version
       </span>
       <header className="header-head">From Vision to Reality</header>
-      <p className="par">
+      <p className="par header-par">
         Craft with Excellence: Shadcn's Best Meets{" "}
         <span className="text-underline">Full Tailwind class Integration</span>{" "}
         . Accessible . Easy To Use & Open Source..

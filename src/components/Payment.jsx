@@ -57,7 +57,7 @@ const Payment = () => {
         />
       </div>
 
-      <div className="card-info flex  gap-4">
+      <div className="card-info">
         <input
           type="text"
           className="input-outlined p-input b-radius-3 italic transition-1"
