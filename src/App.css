@@ -985,7 +985,7 @@ li {
   display: grid;
   border: 1px solid #27272a;
   padding: 1rem;
-  gap: 2rem;
+  gap: 1rem;
   border-radius: 0.4rem;
   grid-template-columns: repeat(3, 1fr) !important;
   justify-content: center;
@@ -1147,48 +1147,6 @@ a {
   min-height: 400px;
   max-width: 700px;
 }
-
-/* .code-pre-but {
-  margin-right: 10px;
-  padding: 0.5rem 1rem;
-  color: #ccc;
-  cursor: pointer;
-  border: none;
-  background: none;
-  outline: none;
-  position: relative;
-  transition: color 0.2s ease;
-}
-
-.code-pre-but.active {
-  color: white;
-}
-
-.code-pre-but.active::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: white;
-  transition: all 0.5s ease;
-}
-
-.code-pre-but::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: white;
-  transition: width 0.5s ease;
-}
-
-.code-pre-but.active::after {
-  width: 100%;
-} */
 
 .indicator {
   height: 2px;

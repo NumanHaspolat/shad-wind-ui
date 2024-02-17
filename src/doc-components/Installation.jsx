@@ -53,7 +53,7 @@ const Installation = ({ selectedDoc }) => {
       <div className="border-bot">
         <PreCode
           code={`
-          <button className="button-filled transition-2 fs-1">
+          <button class="button-outlined transition-2 fs-1">
           Get Started
   </button>
         `}
