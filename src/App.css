@@ -72,6 +72,20 @@ button {
   padding: 0.4rem 0.6rem;
 }
 
+.button-borderless-underline {
+  border: none;
+  color: #828283;
+  background-color: #09090b;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
+}
+
+.button-borderless-underline:hover {
+  text-decoration: underline;
+  color: white;
+}
+
 .input-filled {
   background-color: #fafafa;
   color: #09090b;
@@ -1135,8 +1149,7 @@ a {
   max-width: 700px;
 }
 
-
-.code-pre-but {
+/* .code-pre-but {
   margin-right: 10px;
   padding: 0.5rem 1rem;
   color: #ccc;
@@ -1153,29 +1166,35 @@ a {
 }
 
 .code-pre-but.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
   right: 0;
   height: 2px;
   background-color: white;
-  transition: all 0.5s ease; 
+  transition: all 0.5s ease;
 }
 
 .code-pre-but::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
-  width: 0; /* Başlangıçta genişliği 0 olarak ayarla */
+  width: 0;
   height: 2px;
   background-color: white;
-  transition: width 0.5s ease; /* Genişlik için geçiş animasyonu */
+  transition: width 0.5s ease;
 }
 
 .code-pre-but.active::after {
-  width: 100%; /* active sınıfı eklendiğinde genişliği tamamen aç */
+  width: 100%;
+} */
+
+.indicator {
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s ease;
 }
 
 @media screen and (max-width: 1300px) {

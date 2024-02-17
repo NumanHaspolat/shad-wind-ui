@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CodePreview from "./CodePreview";
 
 const Preview = ({ code }) => (
@@ -23,43 +23,54 @@ const Preview = ({ code }) => (
 const PreviewCodeContainer = ({ code }) => {
   const [view, setView] = useState("preview");
 
+  const previewButtonRef = useRef(null);
+  const codeButtonRef = useRef(null);
+  const indicatorRef = useRef(null);
+
+  useEffect(() => {
+    const indicator = indicatorRef.current;
+    const previewButton = previewButtonRef.current;
+    const codeButton = codeButtonRef.current;
+
+    if (view === "preview") {
+      indicator.style.width = `${previewButton.offsetWidth}px`;
+      indicator.style.transform = `translateX(${previewButton.offsetLeft}px)`;
+    } else if (view === "code") {
+      indicator.style.width = `${codeButton.offsetWidth}px`;
+      indicator.style.transform = `translateX(${codeButton.offsetLeft}px)`;
+    }
+  }, [view]);
+
   const buttonStyle = (currentView) => ({
     marginRight: "10px",
     padding: "0.5rem 1rem",
     color: view === currentView ? "white" : "#ccc",
-    borderBottom: view === currentView ? "2px solid white" : "none",
     cursor: "pointer",
-    borderRadius: "0",
-    transition: ".2s",
+    background: "none",
+    border: "none",
+    outline: "none",
   });
 
   return (
     <div>
-      <div>
+      <div style={{ position: "relative" }}>
         <button
+          ref={previewButtonRef}
           onClick={() => setView("preview")}
-          className={`button-borderless code-pre-but ${
-            view === "preview" ? "active" : ""
-          }`}
           style={buttonStyle("preview")}
         >
           Preview
         </button>
         <button
-          className={`button-borderless code-pre-but ${
-            view === "code" ? "active" : ""
-          }`}
-          style={buttonStyle("code")}
+          ref={codeButtonRef}
           onClick={() => setView("code")}
+          style={buttonStyle("code")}
         >
           Code
         </button>
-        {view === "code" ? (
-          <CodePreview code={code} />
-        ) : (
-          <Preview code={code} />
-        )}
+        <div ref={indicatorRef} className="indicator"></div>
       </div>
+      {view === "code" ? <CodePreview code={code} /> : <Preview code={code} />}
     </div>
   );
 };
