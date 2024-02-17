@@ -13,6 +13,7 @@ import Horizontal from "../doc-components/Horizontal";
 import Menubar from "../doc-components/Menubar";
 import Date from "../doc-components/Date";
 import { Route, Routes } from "react-router-dom";
+import Accordion from "../doc-components/Accordion";
 
 const Docs = () => {
   const [selectedDoc, setSelectedDoc] = useState("introduction");
@@ -34,6 +35,7 @@ const Docs = () => {
     installation: <Horizontal selectedDoc={selectedDoc} />,
     installation: <Menubar selectedDoc={selectedDoc} />,
     installation: <Date selectedDoc={selectedDoc} />,
+    installation: <Accordion selectedDoc={selectedDoc} />,
   };
 
   return (
@@ -72,6 +74,10 @@ const Docs = () => {
             element={<Horizontal selectedDoc={selectedDoc} />}
           />
           <Route path="date" element={<Date selectedDoc={selectedDoc} />} />
+          <Route
+            path="accordion"
+            element={<Accordion selectedDoc={selectedDoc} />}
+          />
           <Route
             path="menubar"
             element={<Menubar selectedDoc={selectedDoc} />}

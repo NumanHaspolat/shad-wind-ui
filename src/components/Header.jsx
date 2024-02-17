@@ -61,7 +61,7 @@ const Header = () => {
       <div className="flex gap-5">
         <button
           className="button-filled transition-2 fs-1 p-button header-fill"
-          onClick={() => navTo("/docs")}
+          onClick={() => navTo("/docs/introduction")}
         >
           Get Started
         </button>

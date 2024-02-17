@@ -18,6 +18,7 @@ const Catalogs = ({ setSelectedDoc, selectedDoc }) => {
     { name: "Register Page", path: "register" },
     { name: "Horizontal", path: "horizontal" },
     { name: "Date Picker", path: "date" },
+    { name: "Accordion", path: "accordion" },
   ];
   return (
     <div className="catalogs">

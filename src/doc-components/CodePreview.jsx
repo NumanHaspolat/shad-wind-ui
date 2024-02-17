@@ -31,7 +31,7 @@ const CodePreview = ({ code }) => {
     },
   };
   return (
-    <div style={{ position: "relative", margin: "2rem 0" }}>
+    <div style={{ position: "relative", margin: ".5rem 0" }}>
       <SyntaxHighlighter
         language="jsx"
         style={customStyle}
