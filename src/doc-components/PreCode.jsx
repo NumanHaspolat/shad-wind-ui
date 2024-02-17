@@ -17,6 +17,7 @@ const Preview = ({ code }) => (
     className="preview-div"
   >
     <div dangerouslySetInnerHTML={{ __html: code }}></div>
+    {/* <pre>{code}</pre> */}
   </div>
 );
 
