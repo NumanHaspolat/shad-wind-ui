@@ -21,7 +21,6 @@ const CodePreview = ({ code }) => {
   const customStyle = {
     ...atomOneDark,
     tag: { color: "#8b8b8b" },
-    language: "javascript",
     keyword: { color: "#95a3a5" },
     string: { color: "#eaecec" },
     function: { color: "#FFFFFF" },

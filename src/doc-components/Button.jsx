@@ -8,7 +8,7 @@ const Button = ({ selectedDoc }) => {
     <div>
       <span className="par-2">
         Docs {">"}{" "}
-        <span className="bold color-light capital">{selectedDoc}</span>
+        <span className="bold color-light capital">Button</span>
       </span>
       <h2 className="head">Button</h2>
       <p className="par-3">

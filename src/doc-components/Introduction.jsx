@@ -26,7 +26,7 @@ const Introduction = ({ selectedDoc }) => {
     <div className="intro">
       <span className="par-2">
         Docs {">"}{" "}
-        <span className="bold color-light capital">{selectedDoc}</span>
+        <span className="bold color-light capital">Introduction</span>
       </span>
       <h2 className="head">Introduction</h2>
       <p className="par-3">

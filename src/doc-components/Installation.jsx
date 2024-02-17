@@ -9,7 +9,7 @@ const Installation = ({ selectedDoc }) => {
     <div className="color-light">
       <span className="par-2">
         Docs {">"}{" "}
-        <span className="bold color-light capital">{selectedDoc}</span>
+        <span className="bold color-light capital">Installation</span>
       </span>
       <h2 className="head">Installation</h2>
       <p className="par-3">How to install classes and structure your app.</p>

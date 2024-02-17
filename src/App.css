@@ -1120,9 +1120,12 @@ a {
 }
 
 .accordion-content {
-  padding: 1rem;
+  /* padding: 1rem; */
+  /* margin: 1rem 0; */
+  color: #a1a1aa !important;
   font-size: 14px;
   color: white;
+  transition: max-height 0.2s ease;
 }
 
 .height-tr {
