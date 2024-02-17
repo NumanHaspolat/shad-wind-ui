@@ -18,26 +18,6 @@ import Accordion from "../doc-components/Accordion";
 const Docs = () => {
   const [selectedDoc, setSelectedDoc] = useState("introduction");
 
-  const docComponents = {
-    introduction: <Introduction selectedDoc={selectedDoc} />,
-    installation: <Installation selectedDoc={selectedDoc} />,
-  };
-
-  const componetns = {
-    installation: <Button selectedDoc={selectedDoc} />,
-    installation: <Input selectedDoc={selectedDoc} />,
-    installation: <Avatar selectedDoc={selectedDoc} />,
-    installation: <Combobox selectedDoc={selectedDoc} />,
-    installation: <Installation selectedDoc={selectedDoc} />,
-    installation: <Checkbox selectedDoc={selectedDoc} />,
-    installation: <Login selectedDoc={selectedDoc} />,
-    installation: <Register selectedDoc={selectedDoc} />,
-    installation: <Horizontal selectedDoc={selectedDoc} />,
-    installation: <Menubar selectedDoc={selectedDoc} />,
-    installation: <Date selectedDoc={selectedDoc} />,
-    installation: <Accordion selectedDoc={selectedDoc} />,
-  };
-
   return (
     <div id="docs" style={{ display: "flex" }}>
       <div style={{ flex: 1 }}>

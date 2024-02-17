@@ -533,7 +533,6 @@ a {
 .menubar-item {
   font-weight: 600;
   font-size: 13px;
-  /* background-color: #09090b; */
 }
 
 .hover-card {
@@ -1145,7 +1144,7 @@ a {
 }
 
 .preview-div {
-  height: 400px;
+  min-height: 400px;
   max-width: 700px;
 }
 
@@ -1194,7 +1193,12 @@ a {
 .indicator {
   height: 2px;
   background-color: white;
-  transition: all 0.5s ease;
+  transition: all 0.35s ease;
+}
+
+.nav-items-div {
+  display: flex;
+  gap: 2rem;
 }
 
 @media screen and (max-width: 1300px) {

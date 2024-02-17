@@ -12,7 +12,9 @@ const INavbar = () => {
 
   const menuItemClass = (path) =>
     `menubar-item p-button transition-2 ${
-      activeItem === path ? "button-outlined" : "button-borderless"
+      activeItem === path
+        ? "button-borderless color-light"
+        : "button-borderless"
     }`;
 
   return (

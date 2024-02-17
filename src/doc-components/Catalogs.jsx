@@ -8,17 +8,17 @@ const Catalogs = ({ setSelectedDoc, selectedDoc }) => {
   ];
 
   const componentsLinks = [
-    { name: "Button", path: "button" },
-    { name: "Input", path: "input" },
-    { name: "Checkbox", path: "checkbox" },
-    { name: "Menubar", path: "menubar" },
-    { name: "Combobox", path: "combobox" },
-    { name: "Avatar", path: "avatar" },
-    { name: "Login Page", path: "login" },
-    { name: "Register Page", path: "register" },
-    { name: "Horizontal", path: "horizontal" },
-    { name: "Date Picker", path: "date" },
     { name: "Accordion", path: "accordion" },
+    { name: "Avatar", path: "avatar" },
+    { name: "Button", path: "button" },
+    { name: "Checkbox", path: "checkbox" },
+    { name: "Combobox", path: "combobox" },
+    { name: "Date Picker", path: "date" },
+    { name: "Horizontal", path: "horizontal" },
+    { name: "Input", path: "input" },
+    { name: "Login Page", path: "login" },
+    { name: "Menubar", path: "menubar" },
+    { name: "Register Page", path: "register" },
   ];
   return (
     <div className="catalogs">

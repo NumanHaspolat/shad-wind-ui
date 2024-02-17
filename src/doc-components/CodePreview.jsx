@@ -14,17 +14,18 @@ const CodePreview = ({ code }) => {
 
       setTimeout(() => setIsCopied(false), 3000);
     } catch (err) {
-      console.error("Kopyalama başarısız:", err);
+      console.error("Copy failed:", err);
     }
   };
 
   const customStyle = {
     ...atomOneDark,
-    tag: { color: "#FFFFFF" },
-    keyword: { color: "#878788" },
-    string: { color: "#878788" },
+    tag: { color: "#8b8b8b" },
+    language: "javascript",
+    keyword: { color: "#95a3a5" },
+    string: { color: "#eaecec" },
     function: { color: "#FFFFFF" },
-    number: { color: "#00c3ff" },
+    number: { color: "#e7f0f0" },
     pre: {
       whiteSpace: "pre-wrap",
       wordBreak: "break-word",

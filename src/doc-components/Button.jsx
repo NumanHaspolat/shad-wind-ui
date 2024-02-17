@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
-import { HiOutlineMail } from "react-icons/hi";
 import PreCode from "./PreCode";
+import Download from "../components/Download";
 
 const Button = ({ selectedDoc }) => {
   return (
@@ -20,6 +20,12 @@ const Button = ({ selectedDoc }) => {
         Preview
 </button>`}
       />
+      <h2 className="head-2">Before We Start</h2>
+      <div className="flex gap-5 jus-center items-center">
+        <p className="par-3">If you haven't installed shadwind/ui yet</p>
+        <Download />
+      </div>
+
       <h4 className="head-2 border-bot">Examples</h4>
       <h5 className="head-3">Filled</h5>
       <PreCode
@@ -49,13 +55,10 @@ const Button = ({ selectedDoc }) => {
         Link
 </button>`}
       />
-      <h5 className="head-3">With Icon</h5>
-      <PreCode
-        code={`
-        <button class="button-filled transition-1">
-        <HiOutlineMail />  Login with Email
-</button>`}
-      />
+      <p className="par-4">
+        As you can see there is couple of options but dont forgot to use
+        tailwind classes to more choices.
+      </p>
     </div>
   );
 };
