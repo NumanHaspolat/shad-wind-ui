@@ -1004,6 +1004,12 @@ li {
   padding: 1rem;
 }
 
+.gray {
+  color: #b3b3b5;
+  margin: 0.4rem;
+  text-decoration: underline;
+}
+
 .catalogs {
   display: flex;
   gap: 1.4rem;
