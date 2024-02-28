@@ -15,7 +15,7 @@ const Menubar = ({ selectedDoc }) => {
       </p>
       <h5 className="head-3">Menubar Example</h5>
       <PreCode
-        code={`    <div class="flex jus-center items-center h-100">
+        code={`    
       <div class="menubar">
         <h2 class="logo">LOGO</h2>
         <button class="menubar-item button-outlined p-button transition-2">
@@ -33,7 +33,7 @@ const Menubar = ({ selectedDoc }) => {
           class="avatar"
         />
       </div>
-    </div>`}
+`}
       />{" "}
       <div className="flex gap-5 jus-center items-center p-5">
         <p className="par-3">
