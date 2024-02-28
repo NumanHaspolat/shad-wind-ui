@@ -12,7 +12,7 @@ const Login = () => {
       <p className="par-3">
         Login page that is used for authentication purposes.
       </p>{" "}
-      <h5 className="head-3">Login Form</h5>
+      <h5 className="head-3 pt-5">Login Form</h5>
       <PreCode
         code={`      <div class="flex flex-col gap-5 jus-center">
   <h3>Log in to your account</h3>

@@ -12,7 +12,7 @@ const Register = () => {
       <p className="par-3">
         Register page that is used for authentication purposes.
       </p>{" "}
-      <h5 className="head-3">Register Form</h5>
+      <h5 className="head-3 pt-5">Register Form</h5>
       <PreCode
         code={`
         <div class="auth-cnt register">
@@ -43,7 +43,8 @@ const Register = () => {
             target="_blank"
             href="https://github.com/NumanHaspolat"
           >
-            <FaGithub fontSize={17} />
+
+ <FaGithub fontSize={17} />
             GitHub
           </a>
         </button>
