@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Combobox from "../components/Combobox";
 import CodePreview from "./CodePreview";
+import Download from "../components/Download";
 
 const Combobox1 = () => {
   const [roles, setRoles] = useState([
@@ -21,6 +22,11 @@ const Combobox1 = () => {
       <p className="par-3">
         Autocomplete input and command palette with a list of suggestions.
       </p>
+      <h2 className="head-2">Before We Start</h2>
+      <div className="flex gap-5 jus-center items-center">
+        <p className="par-3">If you haven't installed shadwind/ui yet</p>
+        <Download />
+      </div>
       <h5 className="head-2 border-bot p-3">Preview</h5>
       <h2 className="head-3">Choose Your Country</h2>
       <Combobox roles={roles} defaultValue={roles[0]} />
@@ -89,8 +95,8 @@ const Combobox1 = () => {
         </a>
       </p>
       <p className="par-4">
-        As you can see there is one option but dont forgot to use
-        tailwind classes to more choices.
+        As you can see there is one option but dont forgot to use tailwind
+        classes to more choices.
       </p>
     </div>
   );

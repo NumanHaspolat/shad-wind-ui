@@ -2,6 +2,7 @@ import React from "react";
 import PreCode from "./PreCode";
 import AccordionItem from "../components/AccItem";
 import CodePreview from "./CodePreview";
+import Download from "../components/Download";
 
 const Accordion = ({ selectedDoc }) => {
   const accordionItems = [
@@ -36,6 +37,11 @@ const Accordion = ({ selectedDoc }) => {
         A vertically stacked set of interactive headings that each reveal a
         section of content.
       </p>
+      <h2 className="head-2">Before We Start</h2>
+      <div className="flex gap-5 jus-center items-center">
+        <p className="par-3">If you haven't installed shadwind/ui yet</p>
+        <Download />
+      </div>
       <h5 className="head-2 border-bot p-3">Preview</h5>
       {accordionItems.map(({ title, desc }) => (
         <AccordionItem key={title} title={title} desc={desc} />
