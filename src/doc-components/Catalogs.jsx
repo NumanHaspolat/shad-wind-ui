@@ -17,8 +17,8 @@ const Catalogs = ({ setSelectedDoc, selectedDoc }) => {
     { name: "Horizontal", path: "horizontal" },
     { name: "Input", path: "input" },
     { name: "Login Page", path: "login" },
-    { name: "Menubar", path: "menubar" },
     { name: "Register Page", path: "register" },
+    { name: "Menubar", path: "menubar" },
   ];
   return (
     <div className="catalogs">

@@ -65,6 +65,7 @@ const INavbar = () => {
               color: "aliceblue",
               marginTop: ".15rem",
             }}
+            target="_blank"
             href="https://github.com/NumanHaspolat"
           >
             <FaGithub fontSize={20} />
@@ -74,7 +75,8 @@ const INavbar = () => {
               color: "aliceblue",
               marginTop: ".15rem",
             }}
-            href="https://www.linkedin.com/in/numanhaspolat"
+            target="_blank"
+            href="https://www.linkedin.com/in/numan-haspolat/"
           >
             <FaLinkedin fontSize={20} />
           </a>

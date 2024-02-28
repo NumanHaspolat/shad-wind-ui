@@ -61,7 +61,7 @@ const TeamMem = () => {
             />
             <div className="user-info">
               <p>Numan Dev</p>
-              <p className="par-2">n@example.com</p>
+              <p className="par-2">haspolatnuman@gmail.com</p>
             </div>
           </div>
           <Combobox roles={roles} defaultValue={"Developer"} />

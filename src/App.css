@@ -211,6 +211,22 @@ button {
   text-decoration: underline;
 }
 
+.pt-1 {
+  padding-top: 0.2rem;
+}
+.pt-2 {
+  padding-top: 0.4rem;
+}
+.pt-3 {
+  padding-top: 0.6rem;
+}
+.pt-4 {
+  padding-top: 0.8rem;
+}
+.pt-5 {
+  padding-top: 1rem;
+}
+
 .avatar {
   height: 40px;
   width: 40px;
@@ -973,6 +989,10 @@ li {
 .border-bot-2 {
   border-bottom: 1px solid #27272a;
   margin-top: 1.4rem;
+}
+.border-bot-3 {
+  border-bottom: 1px solid #27272a;
+  padding: 0.5rem;
 }
 
 .hori {

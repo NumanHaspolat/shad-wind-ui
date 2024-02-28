@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Auth from "./Auth";
 import Cards from "./Cards";
-import Forms from "./Forms";
+import Dashboard from "./Dashboard";
 
 const Main = () => {
   const [selectedContent, setSelectedContent] = useState("Cards");
@@ -12,10 +12,8 @@ const Main = () => {
         return <Auth />;
       case "Cards":
         return <Cards />;
-      case "Forms":
-        return <Forms />;
-      default:
-        return <Auth />;
+      case "Dashboard":
+        return <Dashboard />;
     }
   };
 
@@ -50,10 +48,10 @@ const Main = () => {
           </button>
           <button
             className="button-borderless transition-2 fs-1 p-button main-ul-items"
-            style={getButtonStyle("Forms")}
-            onClick={() => setSelectedContent("Forms")}
+            style={getButtonStyle("Dashboard")}
+            onClick={() => setSelectedContent("Dashboard")}
           >
-            Forms
+            Dashboard
           </button>
         </ul>
         <div className="content">{renderContent()}</div>
