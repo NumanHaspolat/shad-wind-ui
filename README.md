@@ -10,4 +10,4 @@ It makes it easier than ever to create responsive, themed and interactive web ap
 
 I am aware that the library is not very useful, think of it as a shadcn clone, not a library.
 
-[text](https://shadwind.vercel.app/)
+[ShadWind/ui](https://shadwind.vercel.app/)
