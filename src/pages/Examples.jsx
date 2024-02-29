@@ -14,7 +14,7 @@ const Examples = () => {
     tl.current = gsap.timeline({ defaults: { ease: "power3.out" } });
     tl.current
       .fromTo(
-        ".color-light",
+        ".for-gsap",
         { opacity: 0, y: 30 },
         { opacity: 1, y: 0, duration: 1.2 }
       )
@@ -50,7 +50,7 @@ const Examples = () => {
   return (
     <div className="pt-5">
       <main className="main" ref={app}>
-        <span className="color-light flex gap-3 warn fs-1 items-center">
+        <span className="color-light for-gsap flex gap-3 warn fs-1 items-center">
           <CiWarning color="white" fontSize={20} />
           Not fully responsive - Demo version
         </span>
