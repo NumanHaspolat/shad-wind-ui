@@ -7,4 +7,7 @@ Shadwind UI aims to simplify the development process by offering a wide range of
 It makes it easier than ever to create responsive, themed and interactive web applications.
 
 ## Note
+
 I am aware that the library is not very useful, think of it as a shadcn clone, not a library.
+
+[text](https://shadwind.vercel.app/)
