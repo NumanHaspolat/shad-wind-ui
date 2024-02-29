@@ -15,13 +15,17 @@ import Date from "../doc-components/Date";
 import { Route, Routes } from "react-router-dom";
 import Accordion from "../doc-components/Accordion";
 
-const Docs = () => {
+const Docs = ({ componentsLinks }) => {
   const [selectedDoc, setSelectedDoc] = useState("introduction");
 
   return (
     <div id="docs" style={{ display: "flex" }}>
       <div style={{ flex: 1 }}>
-        <Catalogs setSelectedDoc={setSelectedDoc} selectedDoc={selectedDoc} />
+        <Catalogs
+          componentsLinks={componentsLinks}
+          setSelectedDoc={setSelectedDoc}
+          selectedDoc={selectedDoc}
+        />
       </div>
       <div style={{ flex: 4 }}>
         <Routes>
