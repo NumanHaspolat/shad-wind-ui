@@ -891,14 +891,14 @@ li {
 
 .dashboard-div {
   width: 1200px;
-  border-radius: 0.4rem;
+  border-radius: 1rem;
   border: 1px solid #27272a;
   margin: 1rem;
   padding: 0.1rem;
 }
 .dash-nav {
   border-bottom: 1px solid #27272a;
-  padding: 0.8rem 0.6rem;
+  padding: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -987,7 +987,7 @@ li {
 .auth {
   border: 1px solid #27272a;
   padding: 2rem;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
 }
 
 .register-2 {
@@ -1019,7 +1019,7 @@ li {
   border: 1px solid #27272a;
   padding: 1rem;
   border-radius: 0.3rem;
-  padding-bottom: 1.3rem;
+  padding-bottom: 2.2rem;
 }
 
 .methods {
@@ -1124,7 +1124,7 @@ li {
   border: 1px solid #27272a;
   padding: 1rem;
   gap: 1rem;
-  border-radius: 0.4rem;
+  border-radius: 1rem;
   grid-template-columns: repeat(3, 1fr) !important;
   justify-content: center;
 }
