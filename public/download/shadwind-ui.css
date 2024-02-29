@@ -5277,36 +5277,55 @@ button {
 }
 
 .button-filled {
-  background-color: aliceblue;
+  background-color: white;
   /* box-shadow: rgba(230, 230, 230, 0.25) 0px 7px 9px -5px,
     rgba(224, 224, 224, 0.3) 0px 8px 11px -8px; */
   font-weight: 600;
-  border: 1px solid gray;
+  outline: none;
+  border: none;
   border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
 }
 
 .button-outlined {
-  border: 1px solid #27272a;
-  background-color: black;
+  border: none;
+  outline: 1px solid #27272a;
+  background-color: #09090b;
   /* box-shadow: rgba(100, 100, 100, 0.25) 0px 7px 9px -5px,
     rgba(85, 85, 85, 0.3) 0px 8px 11px -8px; */
   font-size: 0.9rem;
   border-radius: 0.4rem;
-  color: aliceblue;
+  color: white;
+  padding: 0.4rem 0.6rem;
 }
 .button-borderless {
   border: none;
   color: #828283;
-  background-color: black;
+  background-color: #09090b;
   font-size: 0.9rem;
   border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
+}
+
+.button-borderless-underline {
+  border: none;
+  color: #828283;
+  background-color: #09090b;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.6rem;
+}
+
+.button-borderless-underline:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .input-filled {
   background-color: #fafafa;
-  color: black;
+  color: #09090b;
   &::placeholder {
-    color: black;
+    color: #09090b;
   }
   border: 1px solid gray;
   outline: 1px solid #27272a;
@@ -5315,25 +5334,23 @@ button {
 .input-outlined {
   border: none;
   color: #858586;
-  box-shadow: rgba(230, 230, 230, 0.25) 0px 1px 4px -7px,
-    rgba(224, 224, 224, 0.3) 0px 8px 11px -8px;
   outline: 1px solid #27272a;
-  background-color: black;
+  background-color: #09090b;
 }
 
-.input-label-aniation {
-  background-color: black;
+.input-label-animation {
+  background-color: #09090b;
   color: #858586;
   border: none;
   outline: none;
 }
 
 .input-outlined:focus {
-  outline: 1px solid aliceblue;
+  outline: 1px solid white;
 }
 
 .button-borderless:hover {
-  color: aliceblue;
+  color: white;
 }
 
 .button-filled:hover,
@@ -5341,6 +5358,7 @@ button {
 .button-borderless:hover {
   opacity: 0.6;
 }
+
 
 .transition-1 {
   transition: all 0.1s;
@@ -5554,6 +5572,72 @@ button {
 .checkbox:disabled + .label {
   cursor: not-allowed;
   opacity: 0.7;
+}
+
+.salary-head {
+  padding-bottom: 0.4rem;
+  font-size: 14px;
+}
+
+.par-2 {
+  color: #747477;
+  font-size: 13px;
+}
+.par-3 {
+  color: #747477;
+  font-size: 15px;
+}
+.par-6 {
+  color: #959596;
+  font-size: 12px;
+}
+.par-4 {
+  color: #eee7e7;
+  font-size: 15px;
+  margin-top: 2.5rem;
+}
+.par-5 {
+  color: white;
+  font-size: 15px;
+}
+
+.capital {
+  text-transform: capitalize;
+}
+
+.head {
+  font-size: 36px;
+  color: white;
+}
+.head-2 {
+  font-size: 26px;
+  margin: 2rem 0;
+  color: white;
+}
+.head-3 {
+  font-size: 19px;
+  margin: 1rem 0;
+  color: white;
+}
+
+.par {
+  color: #a1a1aa;
+  font-size: 15px;
+  width: 560px;
+  text-align: center;
+}
+
+.main-cnt {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 1200px;
+}
+
+.main-ul {
+  display: flex;
+  gap: 0.7rem;
+  margin: 0.5rem;
 }
 
 .label:hover {
