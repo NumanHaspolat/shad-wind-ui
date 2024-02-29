@@ -220,7 +220,7 @@ const Dashboard = () => {
             </VictoryChart>
           </div>
           <div className="recent-sales">
-            <div className="sales-head">
+            <div className="sales-head border-bot-3">
               <p>Recent Sales</p>
               <p className="par-3">You made 265 sales this month.</p>
             </div>
