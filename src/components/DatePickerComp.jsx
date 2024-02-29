@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "../App.css";
 
-const DatePickerComp = ({ gap }) => {
+const DatePickerComp = ({ gap, text, dontShowDesc, noBorder }) => {
   const [startDate, setStartDate] = useState(new Date());
 
   const renderDayContents = (day, date) => {
@@ -18,15 +18,23 @@ const DatePickerComp = ({ gap }) => {
   };
 
   return (
-    <div className="date-picker-container">
-      <p
-        className="color-light p-3 fs-2"
-        style={{
-          marginBottom: ".5rem",
-        }}
-      >
-        Pick a date
-      </p>
+    <div
+      className="date-picker-container"
+      style={{
+        border: noBorder && "none",
+      }}
+    >
+      {dontShowDesc ? null : (
+        <p
+          className="color-light p-3 fs-2"
+          style={{
+            marginBottom: ".5rem",
+          }}
+        >
+          Pick a date
+        </p>
+      )}
+
       <div className="flex space-between">
         <DatePicker
           selected={startDate}
@@ -39,7 +47,7 @@ const DatePickerComp = ({ gap }) => {
           }}
           className="button-filled transition-1"
         >
-          Submit
+          {text || "Submit"}
         </button>
       </div>
     </div>

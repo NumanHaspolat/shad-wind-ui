@@ -210,7 +210,9 @@ button {
 .text-underline {
   text-decoration: underline;
 }
-
+.aspect-square {
+  aspect-ratio: 1/1;
+}
 .pt-1 {
   padding-top: 0.2rem;
 }
@@ -230,6 +232,13 @@ button {
 .avatar {
   height: 40px;
   width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-2 {
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -451,7 +460,7 @@ button {
 
 .combobox-container {
   width: 110px;
-  margin: 5px;
+  margin: 0px 6px 6px 6px;
   position: relative;
   cursor: pointer;
 }
@@ -792,6 +801,11 @@ li {
   justify-content: center;
 }
 
+.salary-head {
+  padding-bottom: 0.4rem;
+  font-size: 14px;
+}
+
 .par-2 {
   color: #747477;
   font-size: 13px;
@@ -799,6 +813,10 @@ li {
 .par-3 {
   color: #747477;
   font-size: 15px;
+}
+.par-6 {
+  color: #959596;
+  font-size: 12px;
 }
 .par-4 {
   color: #eee7e7;
@@ -858,6 +876,106 @@ li {
   display: flex;
   gap: 1rem;
   margin: 1rem;
+}
+
+.dashboard-main {
+  margin: 0rem 1rem;
+}
+
+.dash-main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0rem;
+}
+
+.dashboard-div {
+  width: 1200px;
+  border-radius: 0.4rem;
+  border: 1px solid #27272a;
+  margin: 1rem;
+  padding: 0.1rem;
+}
+.dash-nav {
+  border-bottom: 1px solid #27272a;
+  padding: 0.8rem 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dash-main-content {
+  padding-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.recent-sales {
+  border-radius: 0.4rem;
+  padding: 1rem;
+  border: 1px solid #27272a;
+  width: 500px;
+}
+
+.sales-users {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin: 1.4rem 0;
+}
+
+.salary-user {
+  font-weight: 600;
+}
+
+.sales-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sales-user-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.victory-chart {
+  position: relative;
+}
+
+.left-top {
+  position: absolute;
+  left: 20px;
+  font-weight: 600;
+  top: 15px;
+}
+
+.dash-acc-items {
+  border-radius: 0.4rem;
+  border: 1px solid #27272a;
+  padding-left: 0.7rem;
+}
+
+.salary-overview {
+  display: flex;
+  gap: 1rem;
+  padding: 1.2rem 0rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.salary-item {
+  border-radius: 0.4rem;
+  border: 1px solid #27272a;
+  padding: 1.3rem;
+  display: flex;
+  width: 320px;
+  justify-content: space-between;
+}
+
+.victory-chart {
+  border-radius: 0.4rem;
+  border: 1px solid #27272a;
 }
 
 .hr {
@@ -1195,7 +1313,14 @@ a {
   .preview-div {
     height: 300px;
   }
+  .salary-item {
+    width: auto !important;
+  }
   #docs {
+    width: auto !important;
+  }
+
+  .dashboard-div {
     width: auto !important;
   }
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import "../App.css";
 
-const Combobox = ({ roles, defaultValue }) => {
+const Combobox = ({ roles, defaultValue, onRoleSelect, noBorder }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState(null);
 
@@ -11,17 +11,21 @@ const Combobox = ({ roles, defaultValue }) => {
   const handleSelect = (role) => {
     setSelected(role);
     setIsOpen(false);
+    onRoleSelect && onRoleSelect(role);
   };
 
   useEffect(() => {
-     setSelected(defaultValue) 
-  }, [])
+    setSelected(defaultValue);
+  }, []);
 
   return (
     <div className="combobox-container">
       <button
         className="combobox flex items-center space-between"
         onClick={toggleDropdown}
+        style={{
+          border: noBorder && "none",
+        }}
       >
         {selected || "Select Role"}
         <IoIosArrowDown color="white" />
