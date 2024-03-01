@@ -91,7 +91,7 @@ const Dashboard = () => {
       </div>
       <div className="dashboard-main">
         <div className="dash-main-nav">
-          <h2 className="head-1">Dashboard</h2>
+          <h2>Dashboard</h2>
           <DatePickerComp
             noBorder={true}
             text={"Download"}
@@ -156,9 +156,9 @@ const Dashboard = () => {
         <div className="dash-main-content">
           <div
             className="victory-chart"
-            style={{
-              width: "650px",
-            }}
+            // style={{
+            //   width: "650px",
+            // }}
           >
             <p className="left-top">Overview</p>
             <VictoryChart

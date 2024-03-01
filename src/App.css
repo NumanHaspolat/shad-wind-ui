@@ -941,6 +941,7 @@ li {
 
 .victory-chart {
   position: relative;
+  width: 650px !important;
 }
 
 .left-top {
@@ -1316,7 +1317,21 @@ a {
   .salary-item {
     width: auto !important;
   }
+  .salary-items {
+    flex-wrap: wrap;
+  }
+
+  .dash-main-content {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-self: center;
+  }
   #docs {
+    width: auto !important;
+  }
+
+  .recent-sales {
     width: auto !important;
   }
 
@@ -1327,7 +1342,9 @@ a {
   .methods {
     justify-content: center;
   }
-
+  .victory-chart {
+    width: auto !important;
+  }
   .payment {
     width: auto !important;
     text-align: center;
