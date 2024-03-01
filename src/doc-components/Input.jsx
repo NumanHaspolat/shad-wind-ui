@@ -9,6 +9,13 @@ const Input = ({ selectedDoc }) => {
         Docs {">"}{" "}
         <span className="bold color-light capital">{selectedDoc}</span>
       </span>
+
+      <h2 className="head-2">Before We Start</h2>
+      <div className="flex gap-5 jus-center items-center">
+        <p className="par-3">If you haven't installed shadwind/ui yet</p>
+        <Download />
+      </div>
+
       <h2 className="head">Input</h2>
       <p className="par-3">
         Displays a form input field or a component that looks like an input
@@ -22,11 +29,6 @@ const Input = ({ selectedDoc }) => {
         placeholder="Email"
 />`}
       />
-      <h2 className="head-2">Before We Start</h2>
-      <div className="flex gap-5 jus-center items-center">
-        <p className="par-3">If you haven't installed shadwind/ui yet</p>
-        <Download />
-      </div>
 
       <h4 className="head-2 border-bot">Examples</h4>
       <h5 className="head-3">Filled</h5>
